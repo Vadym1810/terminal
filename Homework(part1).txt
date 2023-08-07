@@ -1,0 +1,55 @@
+1) Посмотреть где я : pwd
+2) Создать папку : mkdir Bash
+3) Зайти в папку : cd /d/Bash
+4) Создать 3 папки : mkdir {papka1,papka2,papka3}
+5) Зайти в любую папку : cd /d/Bash/papka1
+6) Создать 5 файлов (3 txt, 2 json) :touch txt1.txt txt2.txt txt3.txt json1.json json2.json
+7) Создать 3 папки : mkdir {dir1,dir2,dir3}
+8. Вывести список содержимого папки : ls 
+9) + Открыть любой txt файл : nano txt1.txt
+10) + написать туда что-нибудь, любой текст. :  Some text
+11) + сохранить и выйти. : Ctrl s + Ctrl x
+12) Выйти из папки на уровень выше : cd ..
+-- 
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. : mv txt1.txt txt2.txt /d/Bash/dir1
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. : cp txt1.txt txt2.txt /d/Bash/dir1 /d/Bash/dir2 -r
+15) Найти файл по имени : find . -name "txt1.txt"
+16) просмотреть содержимое в реальном времени (команда grep) : grep -w 'Some' txt1.txt
+17) вывести несколько первых строк из текстового файла : grep "[1-4]" txt1.txt
+18) вывести несколько последних строк из текстового файла : grep "[^1-4]" txt1.txt
+19) просмотреть содержимое длинного файла (команда less)  : less /d/Bash/dir1 txt2.txt
+20) вывести дату и время : date
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5006/terminal-hw-request :
+
+1. curl http://162.55.220.72:5006/terminal-hw-request
+2. curl http://162.55.220.72:5005/get_method?name="Vadym"&age="22"
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+1.nano script.sh
+
+2. Пишемо скрипт 
+cd /d/Bash
+mkdir {papka1,papka2,papka3}
+cd /d/Bash/papka1
+touch txt1.txt txt2.txt txt3.txt json1.json json2.json
+mkdir {dir1,dir2,dir3}
+ls
+mv txt1.txt txt2.txt /d/Bash/dir1
+
+3. Запускаємо скрипт : bash script.sh
+
+
+
+
+
+
+
+
+
+
+
+
